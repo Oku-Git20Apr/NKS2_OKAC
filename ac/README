@@ -1,0 +1,143 @@
+             
+run number  |  start time      |   end time    |   number of event  |  comment
+     1        2018/09/05 17:04                      100                PMT H6152 w/ plastic Scinti.
+                                                                       NIM bin where NIM-ECL and discriminator are had an error
+                                                                       (logic signal might be wrong around event number ~20 - ~30
+       
+     3
+     4
+     5        2018/09/06 20:48  2018/09/07 15:58      4699             Aerogel.  Requested: 4708, accepted: 4699
+     6        2018/09/06 16:01  ?                       47
+     7        2018/09/07 16:23  2018/09/07 18:03       381             Threshold for fine-mesh dynode PMT: 5mV
+     8        2018/09/07 18:42  2018/09/10 09:45     15287	       fine-mesh dynode PMT HVs are changed from 2250V to 2300 V 
+                                                                       Req. 15309, Acc. 15287
+     9        2018/09/11 17:18  2018/09/11 17:19     10513             pedestal observation: normal PMT, function generator:250Hz
+    10        2018/09/11 17:??                      100000             same as above
+    11        2018/09/11 18:14  2018/09/11 18:15      4470             trigger: ch1
+    12        2018/09/11        2018/09/12            1000             cosmic ray: normal PMT, TDC_ch2:miss
+    13        2018/09/12        2018/09/12                             trial
+    14        2018/09/12        2018/09/13             225             lead:50cm, 14h
+    15        2018/09/13 10:13  2018/09/13 12:39        41             tdc[4],[5], qdc[4],[5] : miss
+    16        2018/09/13 14:08  2018/09/13 15:01        16             HV-1 is changed from -1800V to -2200V, tdc and qdc(ch4 and ch5):miss
+    17        2018/09/13        2018/09/13              10             trial: tdc and qcd are repaired by kaneta-san
+    18        2018/09/13        2018/09/14             300             a few points of qdc[5] are  -9999, zero suppression or overflow?    
+      
+
+
+                                                                       ----------------------
+                                                                       user_event.c is modifed to set the QDC/TDC threshold value
+    19        2018/09/14 15:30  2018/09/14 15:32    10000              Source Clock trigger (from function generator) 
+    20        2018/09/14 15:56  2018/09/16 08:54      608              Trigger: Cosmic ray -> -9999ch(qdc[4],[5]) is due to overflow?
+    21        2018/09/14 09:30  2018/09/17 10:20      369              qdc[1] and qdc[2] are amplified 
+    22        2018/09/17 10:32  2018/09/17 10;36    10000              Source Clock trigger (from function generator)
+    23        2018/09/17 ?????  2018/09/17 ?????    ?????              HV_4 & HV_5 are changed from -1800V to -1700V
+                                                                       HV_1 is changed from -2200V to -2000V
+                                                                       qdc[1] & qdc[2] are amplified and amplified 
+    24        2018/09/17        2018/09/17              2              junk
+    25        2018/09/17        2018/09/20           1025              qdc[1] and qdc[2] are amplified
+    26        2018/09/20 15:48  2018/09/21           5074              HV_1 is changed from -2000V to -2500V
+                                                                       HV_2 is changed from -1800V to -2000V
+                                                                       qdc[1] & qdc[2] are not amplified any more
+
+    27        2018/09/21        2018/09/21        1000000              Source Clock trigger (from function generator)
+    28        2018/09/21        2018/09/21         100000              HV_1 is changed from -2500V to -2700V
+                                                                       HV_2 is changed from -2000V to -2500V
+                                                                       Source Clock trigger (from function generator)
+
+    29        2018/09/21        2018/09/21          51688              junk
+    30        2018/09/21 16:34  2018/09/21 19:03  1042731              HV_0 : -1700V , v-threshold : -50mV
+                                                                       HV_1 : -2400V , v-threshold : -4.73mV(min)
+                                                                       HV_2 : -2200V , v-threshold : -4.73mV(min)
+                                                                       HV_3 : -1700V , v-threshold : -50mV
+                                                                       HV_4 : -1700V , v-threshold : -25mV
+                                                                       HV_5 : -1700V , v-threshold : -25mV
+                                                                       Source Clock trigger (from function generator)
+    31        2018/09/21 19:08  2018/09/25 10:55    20093              trigger : cosmic ray (w/o Amp)
+    32        2018/09/25        2018/09/25          10000              trigger : B(qdc[1])
+    33        2018/09/25        2018/09/25                             junk
+    34        2018/09/25        2018/09/25          10000              trigger : D(clock generator 1kHz)
+    35        2018/09/25        2018/09/25         200000              trigger : B(qdc[1])
+    36        2018/09/25        2018/09/25         200000              trigger : D(clock generator 1kHz)
+    37        2018/09/25        2018/09/25         200000              trigger : C(qdc[2])
+    38        2018/09/25        2018/09/25          20000              trial (to check the "veto")
+    39        2018/09/25        2018/09/25          20000              trial (to check the "coincidence")
+    40        2018/09/25        2018/09/25          20000              trial (to check the "delay")
+    41        2018/09/25        2018/09/25          20000              trial (width of QDC Gate is changed from 200ns to 1000ns)
+    42        2018/09/25        2018/09/26          20000              clock 1Hz
+    43        2018/09/26        2018/09/26                             junk
+    44        2018/09/26        2018/09/26                             ACR trigger for OPE run (test)
+    45        2018/09/26        2018/09/26                             ACL trigger for OPE run (test)
+    46        2018/09/26        2018/09/26                             clock 1kHz (test)
+    47        2018/09/26        2018/09/26                             junk
+
+                                                                       ------------------------------------QDC repaired
+    48        2018/09/26        2018/09/26         200000              Source clock trigger 1kHz
+    49        2018/09/26        2018/09/26         200000              ACR trigger for OPE run
+    50        2018/09/26        2018/09/26         200000              ACL trigger for OPE run
+    51        2018/09/26        2018/09/27           6469              trigger : A(cosmic ray)
+    52        2018/09/27        2018/09/27                             junk
+    53        2018/09/27        2018/10/02          48246              trigger : A(cosmic ray)
+    54        2018/10/02        2018/10/02         200000              ACR trigger for OPE(LED) run(1kHz)
+    55        2018/10/02        2018/10/02         200000              ACR trigger for OPE(LED) run(50Hz, duty cycle:50%)
+    56        2018/10/02        2018/10/02         200000              ACR trigger for OPE(LED) run(50Hz, duty cycle:10%)
+    57        2018/10/02        2018/10/02                             junk
+    58        2018/10/02        2018/10/02         200000              ACL trigger for OPE(LED) run(50Hz, duty cycle:10%)
+
+                                                                       -------------------------------------ELPH beam (12/7,10,11,12,20)
+   100        2018/12/11 10:39  2018/12/11         100000              w/ Al(1mm)
+   101                                                                 junk
+   102                                                                 junk
+   103                                                                 junk
+   104        2018/12/11        2018/12/11         100000              w/o Al
+   105        2018/12/11        2018/12/11                             junk
+   106        2018/12/11 18:29  2018/12/11         662567              w/o Al, added cables to clear veto
+   107        2018/12/12 09:21  2018/12/12          10000              change AC1 & AC2
+   108        2018/12/12        2018/12/12         100000              same as above
+   109        2018/12/12        2018/12/12          10000              HV1,2,4,5 is changed from -2000V to -2200V
+   110        2018/12/12 10:47  2018/12/12          10000              HV1,2 is changed from -2200V to -2000V, HV4,5 is changed from -2200V to -2300V
+   111        2018/12/12 11:23  2018/12/12          22483              Clock trigger (-2000, -2000, -2300, -2300) 
+                                                                                    = (EVSR1, EVSL1, EVSR2, EVSL2)
+   112        2018/12/12        2018/12/12          10000              coin trigger (-2000, -2000, -2300, -2300)
+   113        2018/12/12        2018/12/12          10000              coin trigger (-2000, -2000, -2400, -2400)
+   114        2018/12/12        2018/12/12          10000              coin trigger (-2000, -2000, -2500, -2500)
+   115        2018/12/12        2018/12/12          10000              coin trigger (-2000, -2000, -2600, -2600)
+   116        2018/12/12        2018/12/12          10000              coin trigger (-2000, -2000, -2700, -2700)
+   117        2018/12/12        2018/12/12          10000              coin trigger (-2100, -2100, -2400, -2400)
+   118        2018/12/12        2018/12/12          10000              coin trigger (-2200, -2200, -2400, -2400)
+   119        2018/12/12        2018/12/12          10000              coin trigger (-2300, -2300, -2400, -2400)
+   120        2018/12/12        2018/12/12          10000              coin trigger (-2400, -2400, -2400, -2400)
+   121        2018/12/12        2018/12/12          10000              coin trigger (-2500, -2500, -2400, -2400) 
+   122        2018/12/12        2018/12/12          10000              coin trigger (-2600, -2600, -2400, -2400)
+   123        2018/12/12        2018/12/12          10000              coin trigger (-2700, -2700, -2400, -2400)
+   124        2018/12/12        2018/12/12          10000              Clock trigger (-2000, -2000, -2000, -2000)
+   125        2018/12/12        2018/12/12          10000              Clock trigger (-2200, -2200, -2200, -2200)
+   126        2018/12/12        2018/12/12          10000              Clock trigger (-2000, -2000, -2300, -2300)
+   127        2018/12/12        2018/12/12          10000              Clock trigger (-2000, -2000, -2400, -2400)
+   128        2018/12/12        2018/12/12          10000              Clock trigger (-2000, -2000, -2500, -2500)
+   129        2018/12/12        2018/12/12          10000              Clock trigger (-2000, -2000, -2600, -2600)
+   130        2018/12/12        2018/12/12          10000              Clock trigger (-2000, -2000, -2700, -2700)
+   131        2018/12/12        2018/12/12          10000              Clock trigger (-2100, -2100, -2400, -2400)
+   132        2018/12/12        2018/12/12          10000              Clock trigger (-2200, -2200, -2400, -2400)
+   133        2018/12/12        2018/12/12          10000              Clock trigger (-2300, -2300, -2400, -2400)
+   134        2018/12/12        2018/12/12          10000              Clock trigger (-2400, -2400, -2400, -2400)
+   135        2018/12/12        2018/12/12          10000              Clock trigger (-2500, -2500, -2400, -2400)
+   136        2018/12/12        2018/12/12          10000              Clock trigger (-2600, -2600, -2400, -2400)
+   137        2018/12/12        2018/12/12          10000              Clock trigger (-2700, -2700, -2400, -2400)
+   138        2018/12/12        2018/12/12          50000              coin trigger  (-2200, -2200, -2400, -2400)
+   139        2018/12/12        2018/12/12          50000              coin trigger  (-2300, -2300, -2400, -2400)
+   140        2018/12/12        2018/12/12          50000              coin trigger  (-2200, -2200, -2500, -2500)
+   141        2018/12/12        2018/12/12          50000              coin trigger  (-2300, -2300, -2500, -2500)
+   142        2018/12/12        2018/12/12          50000              coin trigger  (-2400, -2400, -2500, -2500)
+   143        2018/12/12        2018/12/12          50000              coin trigger  (-2700, -2700, -2700, -2700)
+   144        2018/12/12        2018/12/12          50000              coin trigger  (-2600, -2600, -2600, -2600)
+   145        2018/12/12        2018/12/12          50000              coin trigger  (-2500, -2500, -2500, -2500)
+----------------------------------------------------------------------------------------------------------------------ELPH end ~12/12
+
+   146        2018/12/19        2018/12/19         100000              self trigger  (-2000, -2000, -2100, -2000)
+   147        2018/12/19        2018/12/19         100000              self trigger  (-2100, -2100, -2000, -2100)
+   148        2018/12/19        2018/12/19         100000              self trigger  (-2200, -2200, -2200, -2200)
+   149        2018/12/19        2018/12/19         100000              self trigger  (-2300, -2300, -2300, -2300)
+   150        2018/12/19        2018/12/19         100000              self trigger  (-2400, -2400, -2400, -2400)
+   151        2018/12/19        2018/12/19         100000              self trigger  (-2500, -2500, -2500, -2500)
+   152        2018/12/19        2018/12/19         100000              self trigger  (-2600, -2600, -2600, -2600)
+   153        2018/12/19        2018/12/19         100000              self trigger  (-2700, -2700, -2700, -2700)
