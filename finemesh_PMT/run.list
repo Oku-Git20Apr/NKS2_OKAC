@@ -1,0 +1,142 @@
+##2019/11/11 by Y.Toyama##
+#run No.# start               # stop #  
+10      2019/11/11 22:20(?)   2019/11/11 22:33      test of DAQ. TOF1,2 only, 100 events
+11      2019/11/11 22:49      2019/11/12 13:48      test of DAQ. TOF1,2 only, 39447 events junk. No TDC
+12      2019/11/12 18:00      2019/11/12 18:10      test of DAQ. TOF1,2 only, 394 events
+13      2019/11/12 18:11      2019/11/12 19:34      test of DAQ. TOF1,2 only, Veto signal changed from out1 -> Bout3, junk. No TDC
+14      2019/11/12 19:36      2019/11/12 19:45      test of DAQ. TOF1,2 only, junk. No TDC
+15      2019/11/12            2019/11/12            test of DAQ. TOF1,2 only
+16      2019/11/12            2019/11/12            test of DAQ. TOF1,2 only, junk. No TDC
+17      2019/11/12            2019/11/12            test of DAQ. TOF1,2 only, junk. No TDC
+18      2019/11/12            2019/11/12            test of DAQ. TOF1,2 only, junk. No TDC debug mode
+19      2019/11/12            2019/11/12            test of DAQ. TOF1,2 only
+20      2019/11/12            2019/11/12            test of DAQ. TOF1,2 only
+21      2019/11/12            2019/11/12            test of DAQ. TOF1,2 only, junk. No TDC debug mode
+>>Reset_local, Start_local
+22      2019/11/12            2019/11/12            test of DAQ. TOF1,2 only, debug mode
+23      2019/11/12            2019/11/12            test of DAQ. TOF1,2 only, junk. No TDC. debug mode
+>>Reset_local, Start_local
+24      2019/11/12 20:27      2019/11/13 10:21      test of DAQ. TOF1,2 only, debug mode, 35451events (analyzer crushed at 31074events -> solved 11/19)
+25      2019/11/20 11:15      2019/11/20 11:17      test of DAQ. TOF1,2 only, debug mode, 100events 
+===collector re-compiled (user_event.c updated)===
+26      2019/11/20 14:11      2019/11/20 14:23      test of DAQ. TOF1,2 only, debug mode, 100events 
+27      2019/11/20 14:37      2019/11/20 14:40      test of DAQ. TOF1,2 only, debug mode, 100events (started by Begin Warm)
+28      2019/11/20 14:44      2019/11/20 14:47      test of DAQ. TOF1,2 only, 100events
+1R HV -2000V
+1L HV -1975V
+2R HV -1980V
+2L HV -2040V
+VThreshold=-900mV
+29	2019/11/21 16:18      2019/11/21 16:21      TOF1,2 only, 100 events
+30	2019/11/21 16:31      2019/11/21 16:34      TOF1,2 only, 100000 events (stopped early, 134 events)
+31	2019/11/21 16:37      2019/11/21 16:38      TOF1,2 only, 10000 events pedestal measurement (junk)
+32	junk
+33	junk
+34	2019/11/21 16:46      2019/11/21 16:47      TOF1,2 only, 1000 events pedestal measurement
+35	2019/11/21 16:56      2019/11/22       TOF1,2 only, 100000 events
+===AC study ====
+ HV +1700 V
+VThreshold 5mV
+QDC, TDC ch 15
+================
+36      Junk
+37      2019/11/26 11:15      2019/11/26              junk::  Clock trig 100 Hz
+38      2019/11/26 11:18        //                    junk::  AC Self trig. 
+39      2019/11/26 11:26      2019/11/26  15:55       junk::  Cosmic run  stopped at 11412 event no QDC data (initialization failed?)
+40      2019/11/26 15:57      2019/11/26  15:55       junk::  Error in Create_MsgQ() 
+41      2019/11/26 16:05      2019/11/26  16:29       junk::  Cosmic run(ToF1 (x) ToF2 trig.) stopped at 971 event
+42      2019/11/26 16:32      2019/11/26  16:33       Clock trig 100 Hz, 5k events
+43      junk
+44      junk
+45      2019/11/26 17:15      2019/11/26 17:16        w/ PM amp Clock trig 100 Hz, 1k events
+46      junk
+47      2019/11/26 17:20      2019/11/26 17:22        w/ PM amp self trig 100 Hz, 5k events
+48      2019/11/26 17:26      2019/11/26 20:26        w/ PM amp cosmic run, 7.5k events
+49       junk
+50      2019/11/26 21:26      2019/11/27 13:09        w/ PM amp cosmic run, threshold=28 mV, circuit of AC was changed detail for elog
+
+51     2019/11/27 20:45       2019/11/27 20:45         clock 100 Hz AC1(Ch14), AC2(Ch15) 
+52     junk 
+53     2019/11/27 21:05       2019/11/28 13:19         cosmic run, 39390events
+===Okuyama AC study 12/07~====
+54     2019/12/07 19:21       2019/12/07 19:38         cosmic run, QDC1 NC
+55     2019/12/07 19:38       2019/12/08 13:42         cosmic run test
+56     2019/12/08 14:31       2019/12/08 15:31         cosmic test, 1000ev, PMAMP x2 for AC1,2
+57     2019/12/08 15:31       2019/12/08 15:39         same as above, 10000ev, but something is wrong 
+58     2019/12/08 15:59       2019/12/08               same as above 
+59     2019/12/08 17:05       2019/12/08               test
+60     2019/12/08 18:30       2019/12/08               test
+61     2019/12/08 18:38       2019/12/08               test
+62     2019/12/08 20:33       2019/12/08 20:36         test, after Toyama-san's help1(debug)
+63     2019/12/08 21:12       2019/12/08 21:14         test, after Toyama-san's help2(reboot)
+64     2019/12/08 21:34       2019/12/08 21:36         test
+65     junk 
+66     2019/12/08 21:36       2019/12/09 10:58         cosmic ray test 
+67     2019/12/09 10:58       2019/12/09 11:50         test
+68     2019/12/09 11:52       2019/12/09 11:56         test
+69     2019/12/09 11:59       2019/12/09 17:56         test
+70     junk
+71     junk
+72     junk
+73     2019/12/09 18:34       2019/12/10 15:04         cosmic ray test
+74     2019/12/10             2019/12/10               LED (1.8V) 
+75     2019/12/10 18:16       2019/12/10 18:21         LED (1.7V)
+76     junk
+---------------------------------------------------Configuration is changed.
+77     2019/12/11 14:24       2019/12/11 14:29         LED (1.6V)
+78     2019/12/11 14:32       2019/12/11 14:36         LED (1.7V)
+79     junk
+80     2019/12/11 14:53       2019/12/11 14:57         LED (1.65V)
+---------------------------------------------------Amp is removed, baseline may be changed.
+81     2019/12/11 15:04       2019/12/11 15:09         LED (1.65V)
+---------------------------------------------------Baseline is changed.
+82     junk
+83     2019/12/11 15:23       2019/12/11 15:28         LED (1.65V)
+84     2019/12/11 15:32       2019/12/11 15:42         LED (1.7V)
+85     junk 
+86     2019/12/11 15:52       2019/12/11 15:57         LED (1.6V)
+---------------------------------------------------Baseline is changed again.
+87     2019/12/11 16:01       2019/12/11 16:08         LED (1.6V)
+88     junk 
+89     2019/12/11 16:17       2019/12/11 16:22         LED (1.7V)
+90     2019/12/11 16:25       2019/12/11 16:30         LED (1.65V)
+91     2019/12/11 16:33       2019/12/11 16:37         Clock 1kHz, 100,000 events 
+92     2019/12/11 16:42       2019/12/11 16:47         LED (1.68V) 
+93     2019/12/11 16:49       2019/12/11 19:31         LED (1.68V) 
+94     2019/12/11 19:42       2019/12/11 19:47         Clock 1kHz, 100,000 events 
+95     junk
+96     junk 
+97     2019/12/11 20:07       2019/12/11 20:28         LED (1.5V) 
+98     2019/12/11 20:30       2019/12/11 20:37         LED (1.55V) 
+99     junk 
+100    2019/12/11 20:52       2019/12/11 20:56         LED (1.58V) 
+101    2019/12/11 20:59       2019/12/11 21:05         LED (1.59V) 
+102    junk
+103    2019/12/11 21:14       2019/12/11 21:19         LED (1.62V) 
+104    2019/12/11 21:23       2019/12/11 21:29         LED (1.61V) 
+105    junk 
+106    junk 
+107    2019/12/11 21:46       2019/12/11 21:51         LED (1.63V) 
+108    junk 
+109    2019/12/11 22:01       2019/12/11 22:06         LED (1.64V) 
+-------------------------------------------------Aerogel was set and trigger counters' beselines are shifted. However, those threshold were not changed.
+110    junk 
+111    junk 
+112    2019/12/11 22:41       2019/12/11 22:46         Clock 
+113    2019/12/11 22:48       2019/12/11 23:00         Cosmic ray (junk) 
+114    2019/12/11 23:01       2019/12/12 12:24         Cosmic ray
+115    2019/12/12 12:26       2019/12/13 18:46         Cosmic ray, 10000events
+-------------------------------------------------Box renewal
+116    junk 
+117    2019/12/13 22:51       2019/12/14 18:40         Cosmic ray
+118    2019/12/14 19:43       2019/12/14 19:45         Clock 1kHz, 10000 events
+119    junk 
+120    junk 
+121    2019/12/14 19:53       2019/12/14 19:58         Clock 1kHz, 100000 events 
+122    2019/12/14 20:18       2019/12/14 20:36         Self-trigger1 100000 events 
+123    junk 
+124    2019/12/14 20:44       2019/12/14 20:49         Self-trigger2 100000 events 
+
+
+
+      
