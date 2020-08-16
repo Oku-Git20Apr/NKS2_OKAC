@@ -1,0 +1,18 @@
+run#   /     comments
+1  / test
+2  / GENETYPE:KPlusLambdaMAID
+3  / GENETYPE:Gamma, 1003.dat is broken?
+4  / (IHLseg# = 0) is changed to Aerogel 
+5  / same setup as 4, but Event# is changed to 30,000
+6  / junk
+7  / GENETYPE:Gamma, DetectorConstruction is default, 30000events
+8  / GENETYPE:Gamma, IH1,2 is removed and Aerogel(Scin.) is installed, 30000
+9  / Aerogel position is revised, 30000events
+10 / hodoMaterial -> vacuumMaterial, 30000events
+11 / Aerogel size was mistaken. This is revised ver., 30000events.
+12*/ Trigger: IHHits >= 1; 100,000 events.
+13*/ IH: Default, w/o EV, 100,000 events.
+14*/ w/ EV, Trigger: OHHit >= 2; 100,000 events.
+15 / AC is set to IHSegR (changed from SegL)
+16 / if(IHSegR=2)nIHHits++;???; 100,000 events.
+
